@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        body {
+            background-image: url('img/mujerbot1234.png');
+        }
+    </style>
+   <script>
+    document.getElementById("downloadButton").addEventListener("click", function() {
+        window.location.href = "docs/HOJADEVIDA_LERMA_19_08_23.pdf";
+    });
+</script>
+</head>
+<body>
+    <h1>Contenido de la página</h1>
+    <p>Esta es una página con una imagen de fondo.</p>    
+</body>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Landy Lerma</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/LANDY_859.png" alt="">
+            </div>
+            <h1>LANDY LERMA</h1>
+            <h2>Ingeniera Industrial - Especialista en Inteligencia Artificial - Creadora del concepto EmoAI</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100068691562138&mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="http://tiktok.com/@emoaitech"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://github.com/IngLizzete"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/landy-lerma-666b2581/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/channel/UCjOFrPiPy5PUzbdEFeFHqWw"><i class="fa-brands fa-youtube"></i></a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Landy Lizzete Lerma.</span> Soy una ingeniera industrial con una sólida formación en inteligencia artificial y ciencia de datos. Mi experiencia y conocimientos abarcan desde la conceptualización y diseño de procesos hasta la implementación de soluciones avanzadas de inteligencia artificial para optimización y toma de decisiones informadas..</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            19-10-1982
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +57 3106256042
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            lermabenitez19@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.landylerma.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Bogotá, Colombia
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Autónomo</span>
+                        </li>
+                    </ul>
+                    
+
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-robot"></i>
+                            <span>IA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                            <span>TEACH</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-face-grin-tears"></i>
+                            <span>IE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-video"></i>
+                            <span>VIDEO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-people-group"></i>
+                            <span>FAMILIA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <a id="downloadButton" href="docs/HOJADEVIDA_LERMA_19_08_23.pdf">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Deep Learning</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Machine Learning</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PLN</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Vision Por Computador</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>92%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>87%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Especialización En Inteligencia Artificial</h4>
+                        <span class="casa">Universidad Minuto De Dios</span>
+                        <span class="fecha">2023 - 2023</span>
+                        <p>Apasionada por la creación de soluciones inteligentes mediante la aplicación de algoritmos avanzados 
+                            y técnicas de Machine Learning.  Siempre en búsqueda de innovación, mi objetivo es llevar la 
+                            IA más allá de los límites convencionales, resolviendo problemas complejos y aportando un enfoque 
+                            analítico y creativo a cada desafío.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Certificado Profesional IBM Applied AI</h4>
+                        <span class="casa">IBM-Coursera</span>
+                        <span class="fecha">2023 - 2023</span>
+                        <p>Este Certificado Profesional brinda un conocimiento sólido sobre la Inteligencia Artificial (IA), 
+                            sus diversas aplicaciones y casos de uso. He adquirido habilidades en la utilización de los Servicios
+                            y API de IBM Watson AI. Asimismo, he logrado una comprensión profunda del funcionamiento de la tecnología
+                            de asistentes virtuales, demostrando mi capacidad al diseñar y desplegar un chatbot de atención al cliente
+                            impulsado por IA en un sitio web.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniera Industrial</h4>
+                        <span class="casa">Universidad Minuto De Dios</span>
+                        <span class="fecha">2015 - 2021</span>
+                        <p>Como ingeniera Industrial, me destaco por ser un profesional con una mentalidad empresarial proactiva.
+                            Poseo la capacidad de diseñar y dirigir eficientemente procesos en diversos contextos, ya sea en el ámbito
+                            público o privado. Mi formación sólida en habilidades técnicas y analíticas me respalda, y mi compromiso
+                            con el entorno social y ambiental guía cada una de mis decisiones y acciones.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Autónomo</h4>
+                        <span class="casa">Plasmamos</span>
+                        <span class="fecha">2021 - 2023</span>
+                        <p>Actualmente me desempeño como desarrollador de productos personalizados con IA.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Practicante de Ingeniaría Industrial</h4>
+                        <span class="casa">Farmacias y Droguerías Cruz Verde</span>
+                        <span class="fecha">2019 - 2020</span>
+                        <p>Gestión y satisfacción de requerimientos específicos en el contexto de la sugerencia farmacéutica.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Especialista en Ventas en Centro de Llamadas</h4>
+                        <span class="casa">Avidesa Mac Pollo S.A</span>
+                        <span class="fecha">2015 - 2017</span>
+                        <p>Atención al Cliente con enfoque en logro de objetivos. Desarrollo de estrategias efectivas de fidelización.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <video controls>
+                        <source src="img/Generación_poema.mp4" type="video/mp4">
+                        Tu navegador no admite el elemento de video.
+                    </video>
+                    <div class="contenido">
+                        <h3>Procesamiento de lenguaje natural (NLP)</h3>
+                        <p>Generación de Texto con RNN.</p>
+                        <a href="https://github.com/IngLizzete/Generador_text_RNN.py.git" target="_blank"><strong>Enlace al repositorio en GitHub</strong></a>
+                    </div>
+                      
+                </div>
+                <div class="proyecto">
+                    <video controls>
+                        <source src="img/Sentir_tex.mp4" type="video/mp4">
+                        Tu navegador no admite el elemento de video.
+                    </video>
+                    <div class="contenido">
+                        <h3>Procesamiento de lenguaje natural (NLP)</h3>
+                        <p>App Sentir-Text para el análisis de sentimiento redes sociales</p>
+                        <a href="https://github.com/IngLizzete/Generador_text_RNN.py.git" target="_blank"><strong>Enlace al repositorio en GitHub</strong></a><br>
+                        <a href="https://sentir-text-eb7681b02f45.herokuapp.com/" target="_blank"><strong>Enlace a la App Sentir-Text</strong></a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <video controls>
+                        <source src="img/ANALISIS_3.mp4" type="video/mp4">
+                        Tu navegador no admite el elemento de video.
+                    </video>
+                    <div class="contenido">
+                        <h3>Procesamiento de lenguaje natural (NLP)</h3>
+                        <p>Análisis de Sentimiento Validacion Dataset IMDB</p>
+                        <a href="https://github.com/IngLizzete/nltk_vader2.py.git" target="_blank"><strong>Enlace al repositorio en GitHub</strong></a><br>
+                        <a href="https://sentir-text-eb7681b02f45.herokuapp.com/" target="_blank"><strong>Enlace a la App Sentir-Text</strong></a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <video controls>
+                        <source src="img/emoai_frases.mp4" type="video/mp4">
+                        Tu navegador no admite el elemento de video.
+                    </video>
+                    <div class="">
+                        <h3>Diseño Creativo con IA</h3>
+                        <p>Imagen, video y voz</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <video controls>
+                        <source src="img/emoAiconsejo2.mp4" type="video/mp4">
+                        Tu navegador no admite el elemento de video.
+                    </video>
+                    <div class="">
+                        <h3>Diseño Creativo con IA</h3>
+                        <p>Imagen, video y voz</p>
+                    </div>
+                    
+                </div>
+                <div class="proyecto">
+                    <video controls>
+                        <source src="img/emoai_profesiones2.mp4" type="video/mp4">
+                        Tu navegador no admite el elemento de video.
+                    </video>
+                    <div class="">
+                        <h3>Diseño Creativo con IA</h3>
+                        <p>Imagen, video y voz</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- SECCION CONTACTO -->
+ <section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+            <!-- Formulario -->
+            <div class="col">
+                <input type="text" placeholder="Tú Nombre">
+                <input type="text" placeholder="Número telefónico">
+                <input type="text" placeholder="Dirección de correo">
+                <input type="text" placeholder="Tema">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <button>
+                    Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+            <!-- Mapa -->
+            <div class="col">
+                <img src="img/ubicacion.jpg" alt="">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Bogotá, Colombia
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            Llamanos: +57 3106256042
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            Email: lermabenitez19@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+          
+
+<!-- footer -->
+<footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="https://www.facebook.com/profile.php?id=100068691562138&mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="http://tiktok.com/@emoaitech"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://github.com/IngLizzete"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/landy-lerma-666b2581/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.youtube.com/channel/UCjOFrPiPy5PUzbdEFeFHqWw"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
